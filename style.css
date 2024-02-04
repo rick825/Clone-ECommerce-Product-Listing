@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+
+body{
+ width: 100%;
+}
+
+/* header section */
+.nav{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top:0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.2rem 3rem;
+    z-index: 1000;
+    background-color: white;
+}
+
+
+.navleft{
+  
+}
+.navleft .navlogo a{
+    color: rgb(23, 23, 23);
+}
+.navleft .navlogo h2{
+    font-size: 2.5rem;
+  font-weight: 200;
+}
+
+
+.navmid .navsearch{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    border: 0.1px solid rgba(0, 0, 0, 0.196);
+    padding: 0.5rem ;
+    border-radius: 5px;
+}
+
+.navmid .navsearch input{
+    padding: 0.5rem 1rem;
+    padding-right: 20rem;
+    outline: none;
+    border: none;
+}
+
+.navmid .navsearch img{
+    width: 20px;
+}
+
+
+.navright ul{
+    list-style: none;
+    display: flex;
+    gap:1.5rem;
+}
+
+.navright ul  .navlink{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border: 0.1px solid rgba(0, 0, 0, 0.14);
+    padding: 0.4rem;
+    border-radius: 50%;
+}
+
+.navright ul .search{
+    display: none;
+}
+
+.navright ul img{
+    width: 20px;
+    object-fit: cover;
+}
+/* end header section */
+
+/* main section */
+.main{
+    width: 100%;
+    height: 69rem;
+    display: flex;
+    margin-top: 8.5rem;
+}
+
+.maincont{
+    position: relative;
+}
+.mainleft{
+    width: 20%;
+}
+.mainmid{
+    width: 65%;
+    /* border: 2px solid black; */
+}
+.mainright{
+    width: 15%;
+}
+
+.mcont{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    padding-bottom: 0;
+}
+
+
+/* main left */
+
+.mainleftcont .filter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:2.8rem;
+    
+}
+
+.mainleftcont .filter .filterhead{
+    display: flex;
+    align-items: center;
+    margin-left: -10rem;
+    /* justify-content: center; */
+}
+
+
+.mainleftcont .filter .filterhead h2{
+    font-size: 1.8rem;
+}
+
+.filter .filterhead img{
+    width: 3rem;
+}
+
+.filter .filterlist{
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+}
+
+.filter .filterlist .filt ul{
+    list-style: none;
+}
+
+.filter .filterlist .filt li{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.filter .filterlist .pickcolor{
+    display: flex;
+    gap: 1rem;
+}
+
+.filter .filterlist .pickcolor li{
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.filter .filterlist .pickcolor .color1{
+    background-color: blueviolet;
+}
+
+.filter .filterlist .pickcolor .color2{
+    background-color: rgb(18, 207, 207);
+}
+
+.filter .filterlist .pickcolor .color3{
+  background-color: brown;
+}
+
+.filter .filterlist .pickcolor .color4{
+    background-color: rgb(82, 174, 17);
+}
+
+.filter .filterlist .pickcolor .color5{
+    background-color: rgb(39, 41, 41);
+}
+
+
+.filterlist .filt input{
+    cursor: pointer;
+}
+
+.filterlist .filt  h2{
+    color: rgb(15, 15, 15);
+}
+
+.filterlist .filt span{
+    font-size: 1.4rem;
+    letter-spacing: 0.4px;
+}
+
+/* end main left */
+
+/* main mid  */
+.mainmidcont{
+    width: 100%;
+    height: 100%;
+ gap:2.8rem;
+ overflow: hidden;
+}
+
+.mainmidcont .filter{
+    display: none;
+}
+
+.mainmidtop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: -0.2rem; */
+    padding-right: 2rem;
+}
+
+.mainmidtop .productlistname h2{
+    font-size: 1.8rem;
+}
+
+.mainmidtop .productlistname h2 span{
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: rgb(53, 52, 52);
+}
+
+.mainmidtop .sorting{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mainmidtop .sorting select{
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.mainmidbot{
+    width: 100%;
+    height: 59.2rem;
+    overflow-y: auto;
+    /* border: 2px solid black; */
+    padding-bottom: 1rem;
+}
+
+.mainmidbot::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+.mainmidbot::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+/* product list */
+.product-list{
+ display: flex;
+ gap: 2rem;
+ flex-wrap: wrap;
+}
+
+.product-list .product{
+    width: 22rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    gap:0.8rem;
+    border: 0.1px solid rgba(29, 28, 28, 0.07);
+    padding: 1rem;
+    border-radius: 5px;
+    position: relative;
+}
+
+.product-list .product .product-img{
+ width: 100%;
+ height: 65%;
+ overflow: hidden;
+}
+
+.product .wishlist-div{
+    width: 2rem;
+    position: absolute;
+    top:4%;
+    right:6%;
+    padding: 0.3rem;
+    border-radius: 50%;
+    display: flex;
+    background-color: rgba(217, 213, 213, 0.541);
+}
+
+
+.product .wishlist-div img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product .product-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.product .product-info , .product .product-button {
+    padding: 0rem 0.1rem;
+}
+
+.product .product-info {
+    display: flex;
+    flex-direction: column;
+    /* gap:0.5rem; */
+}
+
+ .product .product-info h2{
+    font-size: 1.8rem;
+}
+
+.product .product-info p{
+    font-size: 1.4rem;
+}
+
+.product .product-info .price{
+ margin-top: 0.8rem;
+}
+
+.product .product-info .rating{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    margin-top: 0.4rem;
+}
+
+.product .product-info .rating img{
+    width: 20px;
+}
+
+.product .product-button a{
+    display: flex;
+    justify-content: center;
+    border: 0.2px solid rgba(0, 0, 0, 0.384);
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: black;
+    margin-top: 0.3rem;
+}
+/* end product list */
+/* end main  mid */
+/* end main section */

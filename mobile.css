@@ -1,0 +1,62 @@
+@media only screen and (max-width: 660px){
+   .nav{
+    padding: 1.5rem 2rem;
+   }
+   
+    .navmid .navsearch{
+       border-radius: 50%;
+       display: none;
+    } 
+
+    .navright ul .search{
+        display: flex;
+    }
+
+    .main{
+        margin-top: 3rem;
+    }
+
+    .mainleft,.mainright{
+        display: none;
+    }
+
+  
+
+    .mainmid{
+        width: 100%;
+    }
+
+    .mainmidtop{
+        padding-right: 0;
+        gap:2rem;
+        flex-direction: column;
+    }
+
+    .mainmidcont .filter{
+        width: 20px;
+        display: flex;
+        margin-right: 4rem;
+    }
+
+    .mainmidtop .productlistname h2{
+        font-size: 1.8rem;
+    }
+
+    .mainmidtop .sorting{
+        gap:0.5rem
+    }
+
+    .mainmidtop .sorting select{
+        padding: 0.3rem 0.7rem;
+    }
+
+    .product-list{
+        justify-content: center;
+    }
+
+    .product-list .product{
+        width: 25rem;
+        height: 38rem;
+    }
+
+}

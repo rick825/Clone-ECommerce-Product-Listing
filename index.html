@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon-Product Listing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+
+
+    <!-- header section -->
+    <header id="nav">
+     <div class="nav">
+        <div class="navleft">
+           <div class="navlogo">
+              <a href=""><h2>One Store</h2></a>
+           </div>
+        </div>
+        <div class="navmid">
+            <div class="navsearch">
+                <input type="text" placeholder="Search For Your Product">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" alt="search--v1"/>
+              </div>
+        </div>
+        <div class="navright">
+           <div class="navlist">
+            <ul>
+                <li class="navitem"><a href="" class="navlink search"> <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" alt="search--v1"/></a></li>
+                <li class="navitem"><a href="" class="navlink"><img  src="./img/heart.png" alt="like--v1" class="wishlist"/></a></li>
+                <li class="navitem"><a href="" class="navlink"><img  src="https://img.icons8.com/pastel-glyph/64/000000/shopping-cart--v2.png" alt="shopping-cart--v2" class="cart"/></a></li>
+                <li class="navitem"><a href="" class="navlink"><img  src="https://img.icons8.com/ios-glyphs/60/000000/test-account.png" alt="test-account" class="profile"/></a></li>
+            </ul>
+           </div>
+        </div>
+     </div>
+    </header>
+    <!-- end header section -->
+
+
+    <!-- main section -->
+     <section id="main">
+      <div class="main">
+
+        <div class="mainleft maincont">
+          <div class="mainleftcont mcont">
+             <div class="filter">
+                <div class="filterhead">
+                    <img  src="https://img.icons8.com/ios-glyphs/60/000000/empty-filter.png" alt="empty-filter"/>
+                    <h2>Filter</h2>
+                </div>
+                <div class="filterlist">
+                    <div class="choose-color filt">
+                      <h2>Pick Color</h2>
+                      <ul class="pickcolor">
+                        <li class="color1"></li>
+                        <li class="color2"></li>
+                        <li class="color3"></li>
+                        <li class="color4"></li>
+                        <li class="color5"></li>
+                      </ul>
+                    </div>
+                    <div class="choose-Brand filt">
+                        <h2>Brand</h2>
+                        <ul class="pick-brand">
+                          <li><input type="checkbox" value="Brand 1"><span>Brand 1</span></li>
+                          <li><input type="checkbox" value="Brand 2"><span>Brand 2</span></li>
+                          <li><input type="checkbox" value="Brand 3"><span>Brand 3</span></li>
+                          <li><input type="checkbox" value="Brand 4"><span>Brand 4</span></li>
+                        </ul>
+                    </div>
+                    <div class="choose-Price filt">
+                        <h2>Price</h2>
+                        <ul class="pick-brand">
+                          <li><input type="checkbox" value="0 to 100"><span>0 to 100</span></li>
+                          <li><input type="checkbox" value="100 to 500"><span>100 to 500</span></li>
+                          <li><input type="checkbox" value="500 to 1000"><span>500 to 1000</span></li>
+                          <li><input type="checkbox" value="1000 & above"><span>1000 & above</span></li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+          </div>
+        </div>
+
+        <div class="mainmid maincont">
+          <div class="mainmidcont mcont">
+            <div class="mainmidtop">
+               <div class="productlistname">
+                 <h2>Product List <span>(198)</span></h2>
+               </div>
+               <div class="sorting">
+               <a href=""><img  src="https://img.icons8.com/ios-glyphs/60/000000/empty-filter.png" alt="empty-filter" class="filter"/></a> 
+                 <h2>Sort By:</h2>
+                  <select name="sort" id="sort">
+                    <option value="price_asc">Price Low to High ↓</option>
+                    <option value="price_desc">Price high to Low ↑</option>
+                  </select>
+               </div>
+            </div>
+            <div class="mainmidbot">
+              <div class="product-list">
+                 <!-- products -->
+                 <div class="product product1">
+                    <div class="wishlist-div">
+                        <img  src="./img/heart.png" alt="like--v1" class="wishlist"/>
+                    </div>
+                    <div class="product-img">
+                     <img src="./img/tshirt.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2>Product Name</h2>
+                        <p class="rating"><img  src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>(10)</p>
+                        <p class="price">$ 400.00</p>
+                    </div>
+                    <div class="product-button">
+                      <a href="">Add to Cart</a>
+                    </div>
+                 </div>
+                 <!-- end products -->
+                 <div class="product product1">
+                    <div class="wishlist-div">
+                        <img  src="./img/heart.png" alt="like--v1" class="wishlist"/>
+                    </div>
+                    <div class="product-img">
+                     <img src="./img/tshirt2.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2>Product Name</h2>
+                        <p class="rating"><img  src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>(10)</p>
+                        <p class="price">$ 400.00</p>
+                    </div>
+                    <div class="product-button">
+                      <a href="">Add to Cart</a>
+                    </div>
+                 </div>
+                 <div class="product product1">
+                    <div class="wishlist-div">
+                        <img  src="./img/heart.png" alt="like--v1" class="wishlist"/>
+                    </div>
+                    <div class="product-img">
+                     <img src="./img/tshirt3.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2>Product Name</h2>
+                        <p class="rating"><img  src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>(10)</p>
+                        <p class="price">$ 400.00</p>
+                    </div>
+                    <div class="product-button">
+                      <a href="">Add to Cart</a>
+                    </div>
+                 </div>
+                 <div class="product product1">
+                    <div class="wishlist-div">
+                        <img  src="./img/heart.png" alt="like--v1" class="wishlist"/>
+                    </div>
+                    <div class="product-img">
+                     <img src="./img/tshirt4.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2>Product Name</h2>
+                        <p class="rating"><img  src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>(10)</p>
+                        <p class="price">$ 400.00</p>
+                    </div>
+                    <div class="product-button">
+                      <a href="">Add to Cart</a>
+                    </div>
+                 </div>
+                 <div class="product product1">
+                    <div class="wishlist-div">
+                        <img  src="./img/heart.png" alt="like--v1" class="wishlist"/>
+                    </div>
+                    <div class="product-img">
+                     <img src="./img/tshirt5.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2>Product Name</h2>
+                        <p class="rating"><img  src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>(10)</p>
+                        <p class="price">$ 400.00</p>
+                    </div>
+                    <div class="product-button">
+                      <a href="">Add to Cart</a>
+                    </div>
+                 </div>
+                 <div class="product product1">
+                    <div class="wishlist-div">
+                        <img  src="./img/heart.png" alt="like--v1" class="wishlist"/>
+                    </div>
+                    <div class="product-img">
+                     <img src="./img/tshirt6.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2>Product Name</h2>
+                        <p class="rating"><img  src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>(10)</p>
+                        <p class="price">$ 400.00</p>
+                    </div>
+                    <div class="product-button">
+                      <a href="">Add to Cart</a>
+                    </div>
+                 </div>
+                 <div class="product product1">
+                    <div class="wishlist-div">
+                        <img  src="./img/heart.png" alt="like--v1" class="wishlist"/>
+                    </div>
+                    <div class="product-img">
+                     <img src="./img/tshirt7.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2>Product Name</h2>
+                        <p class="rating"><img  src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>(10)</p>
+                        <p class="price">$ 400.00</p>
+                    </div>
+                    <div class="product-button">
+                      <a href="">Add to Cart</a>
+                    </div>
+                 </div>
+                 <div class="product product1">
+                    <div class="wishlist-div">
+                        <img  src="./img/heart.png" alt="like--v1" class="wishlist"/>
+                    </div>
+                    <div class="product-img">
+                     <img src="./img/tshirt8.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2>Product Name</h2>
+                        <p class="rating"><img  src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>(10)</p>
+                        <p class="price">$ 400.00</p>
+                    </div>
+                    <div class="product-button">
+                      <a href="">Add to Cart</a>
+                    </div>
+                 </div>
+                 <div class="product product1">
+                    <div class="wishlist-div">
+                        <img  src="./img/heart.png" alt="like--v1" class="wishlist"/>
+                    </div>
+                    <div class="product-img">
+                     <img src="./img/tshirt9.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2>Product Name</h2>
+                        <p class="rating"><img  src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>(10)</p>
+                        <p class="price">$ 400.00</p>
+                    </div>
+                    <div class="product-button">
+                      <a href="">Add to Cart</a>
+                    </div>
+                 </div>
+                 <div class="product product1">
+                    <div class="wishlist-div">
+                        <img  src="./img/heart.png" alt="like--v1" class="wishlist"/>
+                    </div>
+                    <div class="product-img">
+                     <img src="./img/tshirt10.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2>Product Name</h2>
+                        <p class="rating"><img  src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>(10)</p>
+                        <p class="price">$ 400.00</p>
+                    </div>
+                    <div class="product-button">
+                      <a href="">Add to Cart</a>
+                    </div>
+                 </div>
+                 <div class="product product1">
+                    <div class="wishlist-div">
+                        <img  src="./img/heart.png" alt="like--v1" class="wishlist"/>
+                    </div>
+                    <div class="product-img">
+                     <img src="./img/tshirt11.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2>Product Name</h2>
+                        <p class="rating"><img  src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>(10)</p>
+                        <p class="price">$ 400.00</p>
+                    </div>
+                    <div class="product-button">
+                      <a href="">Add to Cart</a>
+                    </div>
+                 </div>
+                 <div class="product product1">
+                    <div class="wishlist-div">
+                        <img  src="./img/heart.png" alt="like--v1" class="wishlist"/>
+                    </div>
+                    <div class="product-img">
+                     <img src="./img/tshirt12.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2>Product Name</h2>
+                        <p class="rating"><img  src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>(10)</p>
+                        <p class="price">$ 400.00</p>
+                    </div>
+                    <div class="product-button">
+                      <a href="">Add to Cart</a>
+                    </div>
+                 </div>
+                 <div class="product product1">
+                    <div class="wishlist-div">
+                        <img  src="./img/heart.png" alt="like--v1" class="wishlist"/>
+                    </div>
+                    <div class="product-img">
+                     <img src="./img/tshirt13.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2>Product Name</h2>
+                        <p class="rating"><img  src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>(10)</p>
+                        <p class="price">$ 400.00</p>
+                    </div>
+                    <div class="product-button">
+                      <a href="">Add to Cart</a>
+                    </div>
+                 </div>
+                 <div class="product product1">
+                    <div class="wishlist-div">
+                        <img  src="./img/heart.png" alt="like--v1" class="wishlist"/>
+                    </div>
+                    <div class="product-img">
+                     <img src="./img/tshirt14.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2>Product Name</h2>
+                        <p class="rating"><img  src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>(10)</p>
+                        <p class="price">$ 400.00</p>
+                    </div>
+                    <div class="product-button">
+                      <a href="">Add to Cart</a>
+                    </div>
+                 </div>
+                 <div class="product product1">
+                    <div class="wishlist-div">
+                        <img  src="./img/heart.png" alt="like--v1" class="wishlist"/>
+                    </div>
+                    <div class="product-img">
+                     <img src="./img/tshirt15.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2>Product Name</h2>
+                        <p class="rating"><img  src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>(10)</p>
+                        <p class="price">$ 400.00</p>
+                    </div>
+                    <div class="product-button">
+                      <a href="">Add to Cart</a>
+                    </div>
+                 </div>
+                 <div class="product product1">
+                    <div class="wishlist-div">
+                        <img  src="./img/heart.png" alt="like--v1" class="wishlist"/>
+                    </div>
+                    <div class="product-img">
+                     <img src="./img/tshirt16.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h2>Product Name</h2>
+                        <p class="rating"><img  src="https://img.icons8.com/fluency/48/star--v1.png" alt="star--v1"/>(10)</p>
+                        <p class="price">$ 400.00</p>
+                    </div>
+                    <div class="product-button">
+                      <a href="">Add to Cart</a>
+                    </div>
+                 </div>
+                 
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mainright maincont">
+
+        </div>
+      </div>
+     </section>
+    <!-- end main section -->
+
+</body>
+</html>
